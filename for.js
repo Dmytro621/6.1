@@ -1,18 +1,9 @@
-function test(letter) {
-    let text = 'Привет мир'
+function test(text, letter) {
     let test = text.split('')
     return (test.filter(result => !letter.includes(result))
-    .join(''))
+    .join('')
+)
 }
 
-console.log(test(['р', 'и']))
+console.log(test('Как дела' , ['а', 'л']))
 
-
-
-// function removeCharacters(text, letters) {
-//     return text.split('')
-//                .filter(char => !letters.includes(char))
-//                .join('');
-// }
-
-// console.log(removeCharacters('Привет мир', ['р', 'и']));
